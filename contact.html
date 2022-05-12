@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=2.0">
+	<title>KANTOR JASA AKUNTAN - TRIMITRA MULTI UTAMA </title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+
+<body style="background-color: #379DC9">
+<section class="sub-header">
+        <nav> 
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>       
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="teams.html">TEAMS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        
+
+    <h1> REACH US! </h1>
+</section>
+
+<!-------- CONTACT US ------->
+<div class="container">
+   <div class="contact-parent">
+      <div class="contact-child child1">
+         <p>
+            <i class="fas fa-map-marker-alt"></i> Address <br />
+            <span> Jl. Holis Regency Ruko A-17, Babakan, Babakan Ciparay
+            <br />
+            Jawa Barat, Indonesia
+            </span>
+         </p>
+         <p>
+            <i class="fas fa-phone-alt"></i> Let's Talk <br />
+            <span> 08157000911<br> 081224705960</span>
+         </p>
+         <p>
+            <i class=" far fa-envelope"></i> General Support <br />
+            <span>trimitra.multiutama@gmail.com</span>
+         </p>
+      </div>
+      <div class="contact-child child2">
+         <div class="inside-contact">
+            <h2>Contact Us</h2>
+             <h3><span id="confirm"></span></h3>
+            <p>Name *</p>
+            <input id="txt_name" type="text" Required="required">
+            <p>Email *</p>
+            <input id="txt_email" type="text" Required="required">
+            <p>Phone *</p>
+            <input id="txt_phone" type="text" Required="required">
+            <p>Subject *</p>
+            <input id="txt_subject" type="text" Required="required">
+            <p>Message *</p>
+            <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
+            <input type="submit" id="btn_send" value="UNDER MAINTENANCE">
+         </div>
+      </div>
+   </div>
+</div>
+<!-------- FOOTER ------->       
+<section class="footer" style="background-color: #557b8c">
+    <h4>Contact Us</h4>
+    <p>Jl. Holis Regency Ruko A-17, Babakan, Babakan Ciparay, Bandung, Jawa Barat<br> Indonesia</p><br>
+    <div class="icons">
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-linkedin-square"></i>
+    </div>
+    <p>KANTOR JASA AKUNTAN TRIMITRA MULTI UTAMA</p>
+</section>
+    
+    
+    
+<!------- END OF CONTACT US PAGE -------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-160px";
+    } 
+    
+</script> 
+<script>
+    function initMap() {
+        var loc = {lat: -6.937277, lng: 107.571070};
+        var map = new google.maps.Map(document.getElementById("m"), {
+            zoom: 4,
+            center: loc
+        });
+        var marker = new google.maps.Marker({
+            position: kjatmu,
+            map: m
+        });
+    }   
+    window.initMap = initMap;
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ6Bdo5-dc--EpcOqoWig-QcLF4fen2AY&callback=initMap">
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+

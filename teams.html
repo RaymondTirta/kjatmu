@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=2.0">
+	<title>KANTOR JASA AKUNTAN - TRIMITRA MULTI UTAMA </title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+
+<body style="background-color: #124F69">
+<section class="sub-header">
+        <nav> 
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>       
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="teams.html">TEAMS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        
+
+    <h1> THE TEAMS! </h1>
+</section>
+
+<!-------- OUR TEAMS ------->
+
+<section class="teams">
+  <h1>OUR TEAMS</h1>
+    <div  class="row">
+        <div class="teams-col">
+            <img src="images/wawa.jpg">
+            <div class="teamlayer" style="text-align: center">
+                <h3>Wong Wey Hua, S.E.,Ak.,CA.,CPA.,BKP.</h3>
+            </div>  
+        </div>  
+        <div class="teams-col">
+            <img src="images/andri.png">
+            <div class="teamlayer" style="text-align: center">
+                <h3>Andri Taripudin, SE.,M.Ak.,Ak.,CA.,CPA</h3>
+            </div> 
+        </div>
+        <div class="teams-col">
+            <img src="images/amel.png">
+            <div class="teamlayer" style="text-align: center">
+                <h3>Amalia Fakhrunnisa, SE.,M.Ak.,Ak.</h3>
+            </div>  
+        </div>      
+    </div> 
+    
+    <div class="row">
+        <div class="teams-col">
+            <img src="images/egit.jpg">
+            <div class="teamlayer" style="text-align: center">
+                <h3>Egit Senjaya, S.E.</h3>
+            </div>  
+        </div>
+        <div class="teams-col">
+            <img src="images/raymond.png">
+            <div class="teamlayer" style="text-align: center">
+                <h3>Raymond Tirta Kelana, S.Si.</h3>
+            </div>  
+        </div>  
+    </div>
+</section>
+
+
+
+<!-------- FOOTER ------->       
+<section class="footer" style="background-color: #557b8c">
+    <h4>Contact Us</h4>
+    <p>Jl. Holis Regency Ruko A-17, Babakan, Babakan Ciparay, Bandung, Jawa Barat<br> Indonesia</p><br>
+    <div class="icons">
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-linkedin-square"></i>
+    </div>
+    <p>KANTOR JASA AKUNTAN TRIMITRA MULTI UTAMA</p>
+</section>
+    
+    
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-160px";
+    }
+
+</script>  
+    
+</body>
+</html>
+
